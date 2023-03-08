@@ -1521,3 +1521,12 @@ end
 -- instantiate Protocol maker
 local pm = ProtoMaker:new()
 pm:register()
+
+-- instantiate Gemini Protocol maker
+local gm = ProtoMaker:new{
+    name='Gemini',
+    desc="Gemini Hub Communication",
+    colname="Gemini",
+    port=51002
+}
+gm:register()
